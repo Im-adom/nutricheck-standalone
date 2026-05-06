@@ -151,12 +151,13 @@ async function analyzeClaimWithLLM(claim, papers) {
 Your job is to evaluate nutrition claims and return a JSON verdict.
 RULES:
 - You MUST always choose exactly one verdict: TRUE, MISLEADING, or FALSE. Never say UNKNOWN.
-- TRUE = claim is accurate and well-supported by science.
-- MISLEADING = claim has some truth but is oversimplified, exaggerated, cherry-picked, or missing important context.
-- FALSE = claim is contradicted by scientific evidence.
-- When evidence is limited, lean toward MISLEADING (most viral nutrition claims oversimplify the science).
-- Your explanation must be 2-3 sentences, friendly, accessible to a general audience.
-- Respond ONLY with valid JSON — no extra text before or after.`;
+- TRUE = claim is accurate and well-supported by scientific evidence. Use this when the claim is factually correct.
+- FALSE = claim is directly contradicted by scientific evidence. Use this when the claim is factually wrong.
+- MISLEADING = claim has partial truth but is oversimplified, exaggerated, lacks important context, or applies only in specific circumstances.
+- Base your verdict strictly on the scientific evidence. Do not favour any particular verdict — choose whichever best fits the evidence.
+- Provide a concise explanation (2-3 sentences) justifying your verdict, referencing specific studies if available.
+- Assess your confidence in the verdict as HIGH, MEDIUM, or LOW based on the quality and quantity of evidence.
+- If no specific studies are available, rely on established scientific consensus and general nutritional knowledge to evaluate the claim.`;
 
     const userMsg = hasPapers
       ? `Analyze this nutrition claim using the research papers below.
