@@ -1,0 +1,1028 @@
+{
+  "claims": [
+    {
+      "id": "P001",
+      "platform": "Instagram",
+      "hashtag": "#nutritionadvise",
+      "claim": "Dieting is not equal to starving. In reality, dieting is what you eat daily, meals that are adequate, balanced, suited to your calorie needs nutrient dense with favourite foods in moderation.",
+      "topic": "diet_basics",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P002",
+      "platform": "Instagram",
+      "hashtag": "#processedfoods",
+      "claim": "Scramble eggs are bad for weight loss, fried eggs are good and hard boiled eggs are excellent",
+      "topic": "eggs_weight_loss",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P003",
+      "platform": "Instagram",
+      "hashtag": "#dietitian",
+      "claim": "Flavoured yogurt is bad for weight loss, plain yogurt is good for weight loss, greek yogurt is excellent",
+      "topic": "yogurt_weight_loss",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P004",
+      "platform": "Instagram",
+      "hashtag": "#easyrecipes",
+      "claim": "Rib eye steak is bad for weight loss, new york strip is good and sirloin is excellent for weight loss",
+      "topic": "meat_weight_loss",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P005",
+      "platform": "Instagram",
+      "hashtag": "#nutritiontips",
+      "claim": "Fried rice is bad for weight loss, white rice is good, cauliflower rice is excellent",
+      "topic": "rice_weight_loss",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P006",
+      "platform": "Instagram",
+      "hashtag": "#healthyeating",
+      "claim": "Cheddar cheese is bad for weight loss, fetta cheese is good, cottage cheese is excellent for weight loss",
+      "topic": "cheese_weight_loss",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P007",
+      "platform": "Instagram",
+      "hashtag": "#cleaneating",
+      "claim": "Fried chicken is bad for weight loss, rotisserie chicken is good and grilled chicken breast is excellent for weight loss",
+      "topic": "chicken_weight_loss",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P008",
+      "platform": "Instagram",
+      "hashtag": "#nutritionadvise",
+      "claim": "The calories in brown rice and the calories in white rice are literally the same and there is no huge difference when it comes to consuming rice for weight loss",
+      "topic": "rice_calories",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P009",
+      "platform": "Instagram",
+      "hashtag": "#processedfoods",
+      "claim": "4 worst foods to eat for lunch: Lunchable packages, frozen oven baked pizzas, spam, ramen noodles",
+      "topic": "processed_foods",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P010",
+      "platform": "Instagram",
+      "hashtag": "#dietitian",
+      "claim": "Frozen food options have the same nutritional value and are more budget friendly than fresh foods",
+      "topic": "frozen_vs_fresh",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P011",
+      "platform": "Instagram",
+      "hashtag": "#easyrecipes",
+      "claim": "Fibre is a game changer for overall health and does not take much to add more to the diet",
+      "topic": "fiber_health",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P012",
+      "platform": "Instagram",
+      "hashtag": "#nutritiontips",
+      "claim": "Snacking is healthy and necessary and building balanced snacks is not complicated",
+      "topic": "snacking",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P013",
+      "platform": "Instagram",
+      "hashtag": "#healthyeating",
+      "claim": "Eating fruits with meals lead to indigestion",
+      "topic": "fruit_digestion",
+      "expectedVerdict": "false"
+    },
+    {
+      "id": "P014",
+      "platform": "Instagram",
+      "hashtag": "#cleaneating",
+      "claim": "Eating fruits right before bed leads to spike in energy levels and prevent sound sleep",
+      "topic": "fruit_sleep",
+      "expectedVerdict": "false"
+    },
+    {
+      "id": "P015",
+      "platform": "Instagram",
+      "hashtag": "#nutritionadvise",
+      "claim": "Eating fruits after meals obstructs digestion",
+      "topic": "fruit_digestion",
+      "expectedVerdict": "false"
+    },
+    {
+      "id": "P016",
+      "platform": "Instagram",
+      "hashtag": "#processedfoods",
+      "claim": "A balanced diet should be 40% fruits and veggies, 25% proteins, 25% fibre rich and 10% fats",
+      "topic": "balanced_diet",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P017",
+      "platform": "Instagram",
+      "hashtag": "#dietitian",
+      "claim": "Eating better will make you feel better and and that will be what you crave",
+      "topic": "diet_behavior",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P018",
+      "platform": "Instagram",
+      "hashtag": "#easyrecipes",
+      "claim": "All foods can fit as part of a healthy diet and this includes your fries, pizza and cake. Rather than restricting and removing add more nutrient rich foods to it",
+      "topic": "flexible_diet",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P019",
+      "platform": "Instagram",
+      "hashtag": "#nutritiontips",
+      "claim": "To manage cravings, sleep well, stay hydrated, eat more fibre, eat more protein and keep busy",
+      "topic": "cravings_management",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P020",
+      "platform": "Instagram",
+      "hashtag": "#healthyeating",
+      "claim": "Five foods to avoid on an empty stomach are coffee, yogurt, raw vegetables, citrus fruits and high sugar foods",
+      "topic": "empty_stomach_foods",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P021",
+      "platform": "Instagram",
+      "hashtag": "#cleaneating",
+      "claim": "Garlic improves blood flow",
+      "topic": "garlic_health",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P022",
+      "platform": "Instagram",
+      "hashtag": "#hearthealth",
+      "claim": "Oats lower cholesterol and is anti-inflammatory",
+      "topic": "oats_cholesterol",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P023",
+      "platform": "Instagram",
+      "hashtag": "#naturalremedies",
+      "claim": "olive oil is anti-inflammatory",
+      "topic": "olive_oil_health",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P024",
+      "platform": "Instagram",
+      "hashtag": "#herbalremedy",
+      "claim": "pomegranates reduces plaque",
+      "topic": "pomegranate_health",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P025",
+      "platform": "Instagram",
+      "hashtag": "#detox",
+      "claim": "dark chocolate aids in circulation",
+      "topic": "dark_chocolate_health",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P026",
+      "platform": "Instagram",
+      "hashtag": "#hearthealth",
+      "claim": "tomatoes have lycopene which is good for heart health it prevents ldl oxidation and keeps arteries clear of any dangerous build up",
+      "topic": "tomatoes_heart",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P027",
+      "platform": "Instagram",
+      "hashtag": "#hearthealth",
+      "claim": "beans provides a stable pressure",
+      "topic": "beans_blood_pressure",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P028",
+      "platform": "Instagram",
+      "hashtag": "#processedfoods",
+      "claim": "Foods like fried foods, processed meat, saturated fats, sugary desserts, saturated fats damage and clog the arteries",
+      "topic": "unhealthy_foods",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P029",
+      "platform": "Instagram",
+      "hashtag": "#hearthealth",
+      "claim": "Avocado, fatty fish, olive oil nuts heal and help the arteries to recover",
+      "topic": "healthy_fats_heart",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P030",
+      "platform": "Instagram",
+      "hashtag": "#naturalremedies",
+      "claim": "A juice made from watermelon, lime, beets and water is a kidney stone terminator. Calms inflammation, detoxes the liver, boosts circulation and keeps the blood pressure in check and also gives the skin a good glow",
+      "topic": "detox_juice",
+      "expectedVerdict": "false"
+    },
+    {
+      "id": "P031",
+      "platform": "Instagram",
+      "hashtag": "#herbalremedy",
+      "claim": "Herbs that improve heart health: Hawthorn berry improves the strength of heart contractions, and repair damaged heart tissues",
+      "topic": "hawthorn_heart",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P032",
+      "platform": "Instagram",
+      "hashtag": "#herbalremedy",
+      "claim": "Moringa seeds stimulate nitric oxide which dilates blood vessels to improve blood flow to the heart",
+      "topic": "moringa_health",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P033",
+      "platform": "Instagram",
+      "hashtag": "#herbalremedy",
+      "claim": "Beetroot is rich in nitrate, relax the vessels and lower blood pressure",
+      "topic": "beetroot_blood_pressure",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P034",
+      "platform": "Instagram",
+      "hashtag": "#herbalremedy",
+      "claim": "Natural shilajit supports healthy cholesterol levels due to its ability to enhance cellular energy production",
+      "topic": "shilajit_health",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P035",
+      "platform": "Instagram",
+      "hashtag": "#herbalremedy",
+      "claim": "Hibiscus reduces oxidative stress and inflammation to reduce the risk of heart diseases",
+      "topic": "hibiscus_heart",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P036",
+      "platform": "Instagram",
+      "hashtag": "#naturalremedies",
+      "claim": "Drinking a glass of warm water 30 minutes before sleep helps thin the bloods making it easier for the heart to pump",
+      "topic": "warm_water_health",
+      "expectedVerdict": "false"
+    },
+    {
+      "id": "P037",
+      "platform": "Instagram",
+      "hashtag": "#hearthealth",
+      "claim": "Best drinks to boost heart health: Garlic and lemon water, hibiscus tea, celery juice on an empty stomach, beetroot smoothie with apple and ginger, flaxseed water",
+      "topic": "heart_health_drinks",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P038",
+      "platform": "Instagram",
+      "hashtag": "#hearthealth",
+      "claim": "Salmon reduces inflammation in blood vessels, (lowers triglycerides by 30%)",
+      "topic": "salmon_health",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P039",
+      "platform": "Instagram",
+      "hashtag": "#hearthealth",
+      "claim": "Blueberries reduce arterial stiffness and lower blood pressure (Reduces heart risk by 15%)",
+      "topic": "blueberries_heart",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P040",
+      "platform": "Instagram",
+      "hashtag": "#hearthealth",
+      "claim": "Walnuts improve endothelial function and reduce inflammation markers(reduces heart risk by 19%)",
+      "topic": "walnuts_heart",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P041",
+      "platform": "Instagram",
+      "hashtag": "#hearthealth",
+      "claim": "Leafy greens like spinach, kale, arugula and natural blood pressure meds. They widen blood vessels better than some prescription drugs",
+      "topic": "leafy_greens_health",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P042",
+      "platform": "Instagram",
+      "hashtag": "#hearthealth",
+      "claim": "Avocado has MUFAs that lower LDL and raise HDL naturally. One avocado daily drops ldl by 13.5 mg/dl",
+      "topic": "avocado_cholesterol",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P043",
+      "platform": "Instagram",
+      "hashtag": "#hearthealth",
+      "claim": "Dark chocolate improve blood flow and lower blood pressure. 1 square daily reduces stroke risk by 17%",
+      "topic": "dark_chocolate_stroke",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P044",
+      "platform": "Instagram",
+      "hashtag": "#hearthealth",
+      "claim": "Oats reduces cholesterol by binding to it and in your gut and escorting it out (3g daily lowers LDL by 5-10%)",
+      "topic": "oats_cholesterol_detailed",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P045",
+      "platform": "Instagram",
+      "hashtag": "#hearthealth",
+      "claim": "2-3 cloves of garlic daily drops the blood pressure as much as some medications",
+      "topic": "garlic_blood_pressure",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P046",
+      "platform": "Instagram",
+      "hashtag": "#hearthealth",
+      "claim": "Soy, barley, eggplant, peanuts, okra and sunflower seeds are cholesterol lowering foods",
+      "topic": "cholesterol_lowering_foods",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P047",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "Slowing down and chewing food properly helps improve gut health",
+      "topic": "chewing_digestion",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P048",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "Drinking water between meals not during meals reduces bloating",
+      "topic": "water_intake_bloating",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P049",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "Sticking to consistent meals, at the same time daily helps regulate digestion and energy levels",
+      "topic": "meal_timing",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P050",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "A mixture of raspberries, strawberries, banana, kefir, collagen powder, vanilla extract and honey support gut health and promote skin glow",
+      "topic": "gut_health_smoothie",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P051",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "Papaya helps prevent constipation",
+      "topic": "papaya_constipation",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P052",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "Ginger tea helps prevent bloating",
+      "topic": "ginger_bloating",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P053",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "Fennel seeds help prevent gas",
+      "topic": "fennel_gas",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P054",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "Pineapple helps slow down digestion",
+      "topic": "pineapple_digestion",
+      "expectedVerdict": "false"
+    },
+    {
+      "id": "P055",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "Banana helps with stomach pain",
+      "topic": "banana_digestion",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P056",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "Coconut yogurt helps with gut imbalance",
+      "topic": "coconut_yogurt_gut",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P057",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "Oats helps with heartburn",
+      "topic": "oats_heartburn",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P058",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "A juice made from a mixture of celery, pineapple, lemon, mint, ginger, and cucumbers is for antibloat",
+      "topic": "detox_juice_bloat",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P059",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "Putting lemon on a banana and adding a pinch of rock salt can improve your gut bacteria, reduce bloating and excessive gas if you consume for the next 7 days",
+      "topic": "banana_lemon_gut",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P060",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "People with low blood pressure, with gas and bloating must not consume chia seeds",
+      "topic": "chia_seeds_contraindication",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P061",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "People on blood thinning meds and with kidney problems must not take chia seeds",
+      "topic": "chia_seeds_medications",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P062",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "Chia seeds and kiwi before breakfast or workout is a gentle detox",
+      "topic": "chia_seeds_detox",
+      "expectedVerdict": "false"
+    },
+    {
+      "id": "P063",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "Aloe Vera and pear mid morning before lunch is soothing and hydrating",
+      "topic": "aloe_vera_health",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P064",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "Banana and buttermilk mid morning will cool and calm the gut",
+      "topic": "banana_buttermilk_gut",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P065",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "Papaya and lemon first thing in the morning will give you the morning cleanse",
+      "topic": "papaya_lemon_cleanse",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P066",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "Stress levels directly affects gut movement",
+      "topic": "stress_digestion",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P067",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "Lemon water to start the day stimulate digestion, metabolism and reduces blood sugar",
+      "topic": "lemon_water_health",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P068",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "1 cup of lemon water detoxifies the liver, boosts metabolism and clears up the skin",
+      "topic": "lemon_water_detox",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P069",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "1 cup of blue berries enhances brain function, fights oxidative stress and provides antioxidants",
+      "topic": "blueberries_brain",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P070",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "1 sweet potato every evening improves sleep quality, stabilizes blood sugar levels and reduces cravings",
+      "topic": "sweet_potato_sleep",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P071",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "1 banana every morning calms the guts, raises potassium levels and keeps energy levels stable",
+      "topic": "banana_morning",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P072",
+      "platform": "Instagram",
+      "hashtag": "#guthealth",
+      "claim": "1 tablespoon of flaxseed daily improves digestion, reduces inflammation and balances cholesterol levels",
+      "topic": "flaxseed_health",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P073",
+      "platform": "Instagram",
+      "hashtag": "#weightloss",
+      "claim": "Soluble fibre reduces bloating and stabilizes blood sugar",
+      "topic": "soluble_fiber",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P074",
+      "platform": "Instagram",
+      "hashtag": "#weightloss",
+      "claim": "Best proteins for fat loss include white fish, shrimps, chicken breast, egg whites",
+      "topic": "protein_weight_loss",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P075",
+      "platform": "Instagram",
+      "hashtag": "#weightloss",
+      "claim": "Rice, broccoli, eggs and chicken is a clean meal",
+      "topic": "clean_eating_meal",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P076",
+      "platform": "Instagram",
+      "hashtag": "#weightloss",
+      "claim": "Avoiding all sugar will help one lose weight within 2 weeks",
+      "topic": "sugar_elimination",
+      "expectedVerdict": "false"
+    },
+    {
+      "id": "P077",
+      "platform": "Instagram",
+      "hashtag": "#weightloss",
+      "claim": "Not eating after 6pm will promote weight loss in 2 weeks",
+      "topic": "meal_timing_weight_loss",
+      "expectedVerdict": "false"
+    },
+    {
+      "id": "P078",
+      "platform": "Instagram",
+      "hashtag": "#weightloss",
+      "claim": "Drinking rough water helps with weight loss in 2 weeks",
+      "topic": "water_weight_loss",
+      "expectedVerdict": "false"
+    },
+    {
+      "id": "P079",
+      "platform": "Instagram",
+      "hashtag": "#weightloss",
+      "claim": "Eating no bread or rice will help one lose weight in 2 weeks",
+      "topic": "carb_elimination",
+      "expectedVerdict": "false"
+    },
+    {
+      "id": "P080",
+      "platform": "Instagram",
+      "hashtag": "#aging",
+      "claim": "Sleeping before 11pm slows down aging",
+      "topic": "sleep_aging",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P081",
+      "platform": "Instagram",
+      "hashtag": "#aging",
+      "claim": "Drinking lemon water daily slows down aging",
+      "topic": "lemon_water_aging",
+      "expectedVerdict": "false"
+    },
+    {
+      "id": "P082",
+      "platform": "Instagram",
+      "hashtag": "#aging",
+      "claim": "Avoiding seed oils and processed foods slows down aging big time",
+      "topic": "processed_foods_aging",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P083",
+      "platform": "Instagram",
+      "hashtag": "#aging",
+      "claim": "Eating the last meal 2 to 3 hours before bed slows aging",
+      "topic": "eating_before_bed",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P084",
+      "platform": "Instagram",
+      "hashtag": "#aging",
+      "claim": "Avoiding screens one hour before bed reduces or slows down aging",
+      "topic": "screen_time_aging",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P085",
+      "platform": "Instagram",
+      "hashtag": "#weightloss",
+      "claim": "Grilled chicken and veggies help lose weight",
+      "topic": "grilled_chicken_weight",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P086",
+      "platform": "Instagram",
+      "hashtag": "#weightloss",
+      "claim": "Boiled potatoes, pepper sauce and fruits help lose weight",
+      "topic": "boiled_potato_weight",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P087",
+      "platform": "Instagram",
+      "hashtag": "#weightloss",
+      "claim": "Eating small swallow and vegetable soup always helps with weight loss",
+      "topic": "soup_weight_loss",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P088",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "Cranberries are the best fruits to protect the kidneys",
+      "topic": "cranberries_kidney",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P089",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "Best juice is lemon water for kidney protection",
+      "topic": "lemon_water_kidney",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P090",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "Best vegetable for kidney protection is cauliflower",
+      "topic": "cauliflower_kidney",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P091",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "Best herb for kidney protection is parsley",
+      "topic": "parsley_kidney",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P092",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "Best seed is pumpkin seeds; reduces inflammation",
+      "topic": "pumpkin_seeds_kidney",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P093",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "Macadamia nuts are the best nuts for kidney protection",
+      "topic": "macadamia_kidney",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P094",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "Best root for kidney protection is ginger",
+      "topic": "ginger_kidney",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P095",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "Best tea is dandelion tea for kidney protection",
+      "topic": "dandelion_tea_kidney",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P096",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "Best grain for kidney protection is buckwheat",
+      "topic": "buckwheat_kidney",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P097",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "Best berries for kidney protection is blueberries",
+      "topic": "blueberries_kidney",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P098",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "Best foods for cleansing a kidney is cucumber, lemon, parsley",
+      "topic": "kidney_cleanse",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P099",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "Apples, garlic, olive oil, red bell peppers, cabbage, fish, water, are helpful for kidneys",
+      "topic": "kidney_healthy_foods",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P100",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "Seeded grapes are helpful and protective for the kidneys",
+      "topic": "grapes_kidney",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P101",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "Purple cabbage is very good for kidney health",
+      "topic": "purple_cabbage_kidney",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P102",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "A perfect kidney cleansing juice would be from pineapple, celery, cucumber, parsley and lime",
+      "topic": "kidney_cleanse_juice",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P103",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "Foods like processed meat, canned soups, avocados, whole grains, dark colas, bananas and potatoes are bad for kidney health and need to be avoided",
+      "topic": "kidney_bad_foods",
+      "expectedVerdict": "misleading"
+    },
+    {
+      "id": "P104",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "There is a need to moderate the intake of foods like white rice, pasta, white fish, low fat milk, egg whites, white bread, chicken breast, and unsalted popcorn for good kidney health",
+      "topic": "kidney_moderate_foods",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P105",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "Berries, pineapples, red bell peppers, onion and garlic cauliflower, apples, cabbage, olive oils are good for kidney health",
+      "topic": "kidney_good_foods",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P106",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "The worst foods for kidney health include: noodles, packaged snacks, pickles, bananas and oranges, processed meat and cheese",
+      "topic": "kidney_worst_foods",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P107",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "The best foods for kidney health include: fish, white rice, olive oil or unsalted butter, cucumbers and apples",
+      "topic": "kidney_best_foods",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P108",
+      "platform": "Instagram",
+      "hashtag": "#kidneyhealth",
+      "claim": "Water melon is a fruit that would clean the kidneys fast",
+      "topic": "watermelon_kidney",
+      "expectedVerdict": "false"
+    },
+    {
+      "id": "P109",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "Oranges, bell peppers, pineapples, kiwi are vitamin C rich and give the skin a good glow",
+      "topic": "vitamin_c_skin",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P110",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "Buttersquash, carrots, apricots, sweet potatoes and full of beta carotene and good for the skin",
+      "topic": "beta_carotene_skin",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P111",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "Almonds, spinach, lentils, zucchini are low glycemic foods and prevent blood sugar spikes that can trigger acne",
+      "topic": "low_glycemic_acne",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P112",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "Blueberries, swiss chard, raspberries and turmeric are rich in antioxidants and help fight free radicals and reduce inflammation",
+      "topic": "antioxidants_skin",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P113",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "Cantaloupe, cabbage, watermelon and cucumber are good hydrating foods that keeps the skin plump and moisturized",
+      "topic": "hydrating_foods_skin",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P114",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "Pumpkin seeds, chickpeas, cashews and oysters are zinc rich foods and reduce inflammation, support wound healing and regulate oil production",
+      "topic": "zinc_skin",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P115",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "Brazil nuts, turkey, sunflower seeds and tuna are selenium rich foods that protect against UV damage and support skin elasticity",
+      "topic": "selenium_skin",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P116",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "Egg yolks, mushrooms, sweet potatoes, beef liver are biotin rich foods and they support healthy skin, hair, and nails",
+      "topic": "biotin_skin",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P117",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "Eggs, broccoli, tomatoes, and bone broth are collagen boosting foods that support the skin's elasticity and repair",
+      "topic": "collagen_skin",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P118",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "Avocado, salmon, sardines, walnuts are omega 3 fatty acids and they reduce inflammation, and support the skin barrier",
+      "topic": "omega_3_skin",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P119",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "Sauerkraut, yogurt, kombucha and kimchi are probiotic rich foods that support gut health and are linked to having clear skin",
+      "topic": "probiotics_skin",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P120",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "Green tea contains polyphenols that soothe inflammation, making it great for acne-prone or sensitive skin",
+      "topic": "green_tea_skin",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P121",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "Tomatoes are rich in lycopene which s a powerful antioxidant that helps to protect against UV damage and promotes a smoother skin",
+      "topic": "lycopene_skin",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P122",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "Vitamin C rich foods like papaya are good, strawberries are better and broccoli are the best; they help with bright skin",
+      "topic": "vitamin_c_bright_skin",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P123",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "Peanuts are good, chicken breast is better and tuna are the best sources of niacinamide which helps with a clear skin and provides good oil control",
+      "topic": "niacinamide_skin",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P124",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "For retinol (vitamin A, carrot is good, spinach is better and liver is the best for the skin",
+      "topic": "retinol_skin",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P125",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "For hyaluronic acid, which is helpful for skin hydration, cucumbers are good, coconut water is better and bone broth are the best sources",
+      "topic": "hyaluronic_acid_skin",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P126",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "For collagen support, garlic is good, egg whites are better and oranges are the best sources",
+      "topic": "collagen_support_skin",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P127",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "Dark chocolate contains flavonoids that protect against UV damage and prevents pre-mature aging",
+      "topic": "dark_chocolate_aging",
+      "expectedVerdict": "true"
+    },
+    {
+      "id": "P128",
+      "platform": "Instagram",
+      "hashtag": "#skinglow",
+      "claim": "Pomegranate is highest in antioxidants and also protects the skin from premature aging",
+      "topic": "pomegranate_aging",
+      "expectedVerdict": "true"
+    }
+  ]
+}
