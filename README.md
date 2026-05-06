@@ -1,163 +1,189 @@
-# NutriCheck 🥗
+# NutriCheck
 
-**Evidence-Based Nutrition Fact Checker with LLM Intelligence & Interactive Visualization**
+**Evidence-Based Nutrition Claim Fact-Checker**
 
-NutriCheck is a sophisticated web application that combats nutritional misinformation by analyzing nutrition claims against peer-reviewed research from PubMed. Using advanced LLM technology and D3.js visualizations, it provides users with evidence-based verdicts, detailed research citations, and transparent explanations of the scientific foundation behind each analysis.
-
----
-
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Live Demo](#live-demo)
-- [Technology Stack](#technology-stack)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Project Structure](#project-structure)
-- [How It Works](#how-it-works)
-- [Usage](#usage)
-- [API Documentation](#api-documentation)
-- [Dataset](#dataset)
-- [Visualization Guide](#visualization-guide)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [Disclaimer](#disclaimer)
-- [License](#license)
+NutriCheck is a web application that helps users verify nutrition claims using peer-reviewed research from PubMed and AI analysis via the Groq API. Enter any nutrition claim and receive a verdict (TRUE, MISLEADING, or FALSE) backed by real scientific papers.
 
 ---
 
-## 🎯 Overview
+## What It Does
 
-Nutritional misinformation spreads rapidly on social media platforms like Instagram, often leading users to make uninformed dietary decisions. NutriCheck addresses this critical problem by:
-
-1. **Accepting user-submitted nutrition claims** (e.g., "Greek yogurt is better for weight loss than regular yogurt")
-2. **Searching peer-reviewed literature** via PubMed's live API
-3. **Analyzing findings with AI** (Groq LLM - free tier)
-4. **Generating friendly, evidence-based verdicts** (TRUE, MISLEADING, or FALSE)
-5. **Visualizing evidence strength** with D3.js gauges showing research composition
-6. **Providing clickable links** to original research papers
-
-**Goal:** Help users understand nutritional claims through a transparent, scientific lens without operating as a "black box."
+1. You type a nutrition claim (e.g. *"Eating eggs raises cholesterol"*)
+2. The app searches PubMed for relevant peer-reviewed studies
+3. An AI model (Llama 3 via Groq) analyses the evidence
+4. You receive a verdict with confidence level, evidence strength gauge, and links to the actual papers
 
 ---
 
-## ✨ Features
+## Technology Stack
 
-### Core Features
-
-✅ **Claim Analysis Engine**
-- Accepts free-form nutrition claims from users
-- Auto-detects claim topic (weight loss, heart health, digestion, kidney health, skin health, etc.)
-- Real-time PubMed search for relevant peer-reviewed studies
-
-✅ **Evidence-Based Verdicts**
-- **TRUE**: Claim is supported by peer-reviewed research
-- **MISLEADING**: Claim contains half-truths or lacks important context
-- **FALSE**: Claim is contradicted by current scientific evidence
-- **INSUFFICIENT_DATA**: Not enough research found
-
-✅ **Confidence Scoring**
-- HIGH: Strong consensus across multiple high-quality studies
-- MEDIUM: Some supporting evidence but with limitations
-- LOW: Limited research or contradictory findings
-
-✅ **Interactive D3.js Visualization**
-- Evidence Strength Gauge (Weak → Moderate → Strong with color coding)
-- Study Type Breakdown:
-  - 🔴 Systematic Reviews/Meta-analyses (highest weight)
-  - 🟠 Randomized Controlled Trials (RCTs)
-  - 🟡 Clinical Trials
-  - 🟢 Observational Studies
-  - ⚪ Other research types
-- Evidence Quality Score (0-100%)
-
-✅ **Research Transparency**
-- Direct links to PubMed papers
-- Study type classification
-- Author names and publication dates
-- Abstract previews
-- Complete paper URLs for deeper investigation
-
-✅ **Local History Tracking**
-- Browser-based localStorage
-- Quick access to previous analyses
-- One-click reanalysis of past claims
-- Clear history option
-
-✅ **Example Claims**
-- Pre-loaded examples for user testing
-- Quick demonstration of tool functionality
-- Categories: Digestion, Fiber, Weight Loss
-
-✅ **Professional UI/UX**
-- Split-screen layout (input on left, analysis on right)
-- Responsive design (desktop, tablet, mobile)
-- Loading states with progress indicators
-- Toast notifications
-- Smooth animations and transitions
-- Accessible color contrast and typography
+| Layer | Technology |
+|---|---|
+| Frontend | HTML5, CSS3, Vanilla JavaScript, D3.js |
+| Backend | Node.js, Express.js |
+| AI Model | Llama 3 70B via Groq API (free tier) |
+| Research Data | PubMed / NCBI Entrez API (no key required) |
+| History Storage | Browser localStorage |
 
 ---
 
-## 🔗 Live Demo
+## Prerequisites
 
-**[NutriCheck Live](https://nutricheck-git-main-grace-amaning-kwartengs-projects.vercel.app/)**
+Before running this project, install the following:
 
-*Note: First load may take a few seconds as Vercel serverless functions initialize*
+- **Node.js v14 or later** — [https://nodejs.org](https://nodejs.org) (download the LTS version)
+- **npm** — comes bundled with Node.js automatically
+- **A Groq API key** — free, takes ~1 minute to get (see below)
 
----
+### How to get a free Groq API key
 
-## 🛠️ Technology Stack
-
-### Frontend
-- **HTML5** - Semantic structure
-- **CSS3** - Modern styling with CSS variables, gradients, animations
-- **JavaScript (Vanilla)** - No frameworks for lightweight deployment
-- **D3.js v7.9.0** - Interactive data visualization (evidence gauges, breakdowns)
-
-### Backend
-- **Node.js** - Runtime environment
-- **Vercel Serverless Functions** - Scalable API endpoints (no server to manage)
-- **Express.js** - HTTP server (optional for local development)
-
-### AI/ML
-- **Groq API** - Free LLM service (mixtral-8x7b-32768 model)
-  - Medical reasoning & chain-of-thought
-  - Fast inference (perfect for real-time analysis)
-  - No rate limits (beta tier)
-- **HuggingFace Inference API** - Backup LLM (30k tokens/month free)
-
-### Data Sources
-- **PubMed API** - Free, government-provided
-  - 35+ million biomedical articles
-  - No API key required (respects rate limits)
-  - Search by keywords, study type, date range
-- **NCBI Entrez Utilities** - Direct paper metadata access
-
-### Database
-- **localStorage** - Client-side history storage (no backend database needed)
-- Optional: SQLite for production-level history tracking
-
-### Deployment
-- **GitHub** - Version control & collaboration
-- **Vercel** - Full-stack deployment (frontend + serverless backend)
-- **Free tier** - Adequate for educational/demonstration use
+1. Go to [https://console.groq.com](https://console.groq.com)
+2. Sign up for a free account (no credit card required)
+3. Navigate to **API Keys** in the left sidebar
+4. Click **Create API Key**, give it a name, and copy the key
 
 ---
 
-## 📦 Installation
+## Running Locally (Step-by-Step)
 
-### Prerequisites
-- Git
-- Node.js (v14+)
-- npm or yarn
-- GitHub account
-- Vercel account (free)
-- Groq API key (free, get from https://console.groq.com)
+### Step 1 — Download or clone the project
 
-### Step 1: Clone Repository
+If you have git installed:
+```bash
+git clone <repo-url>
+cd nutricheck-main
+```
+
+Or simply unzip the project folder and open a terminal inside the `nutricheck-main` directory.
+
+### Step 2 — Install dependencies
 
 ```bash
-git clone https://github.com/Im-adom/nutricheck.git
-cd nutricheck
+npm install
+```
+
+This installs Express, Groq SDK, dotenv, and other required packages into a `node_modules` folder.
+
+### Step 3 — Create your environment file
+
+In the `nutricheck-main` folder, create a file named `.env` (no extension) with the following content:
+
+```
+GROQ_API_KEY=your_groq_api_key_here
+PORT=3000
+```
+
+Replace `your_groq_api_key_here` with the key you copied from console.groq.com.
+
+> A template file called `.env.example` is included in the project for reference.
+
+### Step 4 — Start the server
+
+```bash
+npm start
+```
+
+You should see:
+
+```
+✅ NutriCheck server running at http://localhost:3000
+📱 Open your browser and go to http://localhost:3000
+```
+
+### Step 5 — Open the app
+
+Open your browser and go to:
+
+```
+http://localhost:3000
+```
+
+The app is now fully running locally. No internet deployment is needed to test it — only the PubMed API calls and Groq API calls go outward.
+
+---
+
+## Project Structure
+
+```
+nutricheck-main/
+├── public/
+│   ├── index.html          # Main UI
+│   ├── css/
+│   │   └── style.css       # All styling
+│   └── js/
+│       ├── app.js          # Frontend logic (fetch, display, history)
+│       ├── d3-gauge.js     # Evidence strength gauge chart
+│       └── utils.js        # Shared utilities
+├── api/
+│   ├── analyze.js          # Core logic: PubMed search + Groq LLM analysis
+│   └── search.js           # PubMed search endpoint
+├── data/
+│   └── dataset.json        # Sample claims dataset
+├── server.js               # Express server (entry point for local run)
+├── package.json
+├── .env.example            # Template for environment variables
+└── vercel.json             # Config for optional Vercel deployment
+```
+
+---
+
+## How the Analysis Works
+
+1. **Topic detection** — the claim is matched against keywords to identify the nutritional topic (e.g. protein, heart health, weight loss)
+2. **PubMed search** — up to 5 query strategies are tried in sequence until papers are found; searches the NCBI database of 35+ million biomedical articles
+3. **Evidence scoring** — papers are weighted by study type:
+   - Systematic Review / Meta-analysis → highest weight (10)
+   - Randomised Controlled Trial (RCT) → weight 8
+   - Clinical Trial → weight 7
+   - Review → weight 5
+   - Observational Study → weight 3
+4. **LLM analysis** — Groq runs Llama 3 70B to evaluate the claim against the retrieved abstracts and returns a structured JSON verdict
+5. **Result display** — verdict, confidence, evidence gauge, and paper links are rendered in the UI
+
+---
+
+## Verdicts Explained
+
+| Verdict | Meaning |
+|---|---|
+| **TRUE** | The claim is factually accurate and well-supported by scientific evidence |
+| **MISLEADING** | The claim has partial truth but is oversimplified, exaggerated, or missing important context |
+| **FALSE** | The claim is directly contradicted by scientific evidence |
+
+Confidence levels: **HIGH**, **MEDIUM**, or **LOW** — based on the quantity and quality of papers found.
+
+---
+
+## Example Claims to Try
+
+- "Greek yogurt is better for weight loss than regular yogurt"
+- "Eating eggs every day raises your cholesterol"
+- "High-fiber diets reduce the risk of colon cancer"
+- "Drinking lemon water in the morning boosts your metabolism"
+- "Red meat causes heart disease"
+
+---
+
+## Troubleshooting
+
+**`Error: GROQ_API_KEY is not set`**
+- Make sure your `.env` file exists in the `nutricheck-main` folder (not inside any subfolder)
+- Check that the key is pasted correctly with no spaces around the `=`
+
+**`npm install` fails**
+- Ensure Node.js v14+ is installed: run `node --version` to check
+- Try deleting the `node_modules` folder and running `npm install` again
+
+**Port 3000 already in use**
+- Change `PORT=3001` in your `.env` file and restart
+
+**Analysis always returns an error**
+- Check your terminal for the error message — it will show the exact Groq API error
+- Verify your API key is valid by logging in to console.groq.com
+
+---
+
+## Disclaimer
+
+NutriCheck is an educational tool for informational purposes only. It does not replace professional medical or dietary advice. Always consult a registered dietitian or healthcare provider for personalised nutrition guidance.
+
