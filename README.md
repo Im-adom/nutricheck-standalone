@@ -1,189 +1,402 @@
 # NutriCheck
 
-**Evidence-Based Nutrition Claim Fact-Checker**
+## Evidence-Based Nutrition Claim Fact-Checker
 
-NutriCheck is a web application that helps users verify nutrition claims using peer-reviewed research from PubMed and AI analysis via the Groq API. Enter any nutrition claim and receive a verdict (TRUE, MISLEADING, or FALSE) backed by real scientific papers.
+NutriCheck is a web application that helps users evaluate nutrition claims using peer-reviewed scientific evidence from PubMed and AI-powered analysis through the Groq API.
+
+Users can enter a nutrition-related claim and receive a verdict (**TRUE**, **MISLEADING**, or **FALSE**) supported by scientific evidence, confidence scoring, and linked PubMed studies.
+
+# Live Deployment
+
+## Live Application
+[https://nutricheck-standalone.onrender.com​]
+
+# What the Application Does
+
+1. The user enters a nutrition claim  
+   Example:
+   > "Eating eggs raises cholesterol"
+
+2. The application searches PubMed for relevant peer-reviewed studies
+
+3. Retrieved abstracts and metadata are analyzed using the Groq-hosted Llama 3 large language model
+
+4. The system returns:
+   - A verdict (**TRUE**, **MISLEADING**, or **FALSE**)
+   - Evidence strength score
+   - Supporting PubMed studies and links
 
 ---
 
-## What It Does
-
-1. You type a nutrition claim (e.g. *"Eating eggs raises cholesterol"*)
-2. The app searches PubMed for relevant peer-reviewed studies
-3. An AI model (Llama 3 via Groq) analyses the evidence
-4. You receive a verdict with confidence level, evidence strength gauge, and links to the actual papers
-
----
-
-## Technology Stack
+# Technology Stack
 
 | Layer | Technology |
 |---|---|
 | Frontend | HTML5, CSS3, Vanilla JavaScript, D3.js |
 | Backend | Node.js, Express.js |
-| AI Model | Llama 3 70B via Groq API (free tier) |
-| Research Data | PubMed / NCBI Entrez API (no key required) |
-| History Storage | Browser localStorage |
+| AI Model | Llama 3 70B via Groq API |
+| Research Database | PubMed / NCBI Entrez API and curated dataset from social media |
+| Hosting | Render |
+| Local Storage | Browser localStorage |
+
+
+# System Architecture
+
+NutriCheck follows a client-server architecture:
+
+- The frontend interface is served using Express.js
+- API endpoints process user nutrition claims
+- PubMed scientific abstracts are retrieved dynamically from NCBI APIs
+- The Groq LLM evaluates scientific evidence and generates verdicts
+- Results are returned and visualized on the frontend
+
+# Features
+
+- AI-powered nutrition claim fact-checking
+- Peer-reviewed PubMed literature retrieval
+- Evidence strength scoring
+- Interactive D3.js evidence gauge visualization
+- Local search history storage
+- Automatic nutrition topic detection
+- Scientific paper linking through PubMed
 
 ---
 
-## Prerequisites
+# Prerequisites
 
-Before running this project, install the following:
+Before running the project locally, install the following:
 
-- **Node.js v14 or later** — [https://nodejs.org](https://nodejs.org) (download the LTS version)
-- **npm** — comes bundled with Node.js automatically
-- **A Groq API key** — free, takes ~1 minute to get (see below)
-
-### How to get a free Groq API key
-
-1. Go to [https://console.groq.com](https://console.groq.com)
-2. Sign up for a free account (no credit card required)
-3. Navigate to **API Keys** in the left sidebar
-4. Click **Create API Key**, give it a name, and copy the key
+- **Node.js v18 or later** (recommended: latest LTS version)
+- **npm** (comes bundled with Node.js)
+- A free **Groq API key**
 
 ---
 
-## Running Locally (Step-by-Step)
+# Getting a Free Groq API Key
 
-### Step 1 — Download or clone the project
+1. Visit:
+   https://console.groq.com
 
-If you have git installed:
+2. Create a free account
+
+3. Navigate to:
+   **API Keys**
+
+4. Create a new API key and copy it
+
+---
+
+# Running Locally
+
+## Step 1 — Clone the Repository
+
 ```bash
 git clone <repo-url>
 cd nutricheck-main
-```
+````
 
-Or simply unzip the project folder and open a terminal inside the `nutricheck-main` directory.
+Alternatively, download and unzip the repository manually.
 
-### Step 2 — Install dependencies
+---
+
+## Step 2 — Install Dependencies
 
 ```bash
 npm install
 ```
 
-This installs Express, Groq SDK, dotenv, and other required packages into a `node_modules` folder.
+This installs:
 
-### Step 3 — Create your environment file
+* Express.js
+* Groq SDK
+* dotenv
+* all required project dependencies
 
-In the `nutricheck-main` folder, create a file named `.env` (no extension) with the following content:
+---
 
+## Step 3 — Create Environment Variables
+
+Create a file named:
+
+```bash
+.env
 ```
+
+inside the root `nutricheck-main` directory.
+
+Add:
+
+```env
 GROQ_API_KEY=your_groq_api_key_here
 PORT=3000
 ```
 
-Replace `your_groq_api_key_here` with the key you copied from console.groq.com.
+Replace:
 
-> A template file called `.env.example` is included in the project for reference.
+```env
+your_groq_api_key_here
+```
 
-### Step 4 — Start the server
+with your actual Groq API key.
+
+> IMPORTANT:
+> Never upload your `.env` file or API keys to GitHub.
+
+---
+
+## Step 4 — Start the Server
 
 ```bash
 npm start
 ```
 
-You should see:
+Expected terminal output:
 
-```
+```bash
 ✅ NutriCheck server running at http://localhost:3000
 📱 Open your browser and go to http://localhost:3000
 ```
 
-### Step 5 — Open the app
+---
 
-Open your browser and go to:
+## Step 5 — Open the Application
 
-```
+Visit:
+
+```text
 http://localhost:3000
 ```
 
-The app is now fully running locally. No internet deployment is needed to test it — only the PubMed API calls and Groq API calls go outward.
+The application should now be fully functional locally.
 
----
+# Deployment
 
-## Project Structure
+## Recommended Deployment Platform — Render
 
+NutriCheck is structured as a traditional Express.js application and is best deployed using Render.
+
+# Render Deployment Configuration
+
+## Build Command
+
+```bash
+npm install
 ```
+
+## Start Command
+
+```bash
+node server.js
+```
+## Environment Variables
+
+```env
+GROQ_API_KEY=your_groq_api_key_here
+PORT=10000
+```
+
+# Deploying on Render
+
+1. Push the repository to GitHub
+
+2. Create a new Web Service on Render
+
+3. Connect the GitHub repository
+
+4. Configure:
+
+   * Build Command → `npm install`
+   * Start Command → `node server.js`
+
+5. Add the required environment variables
+
+6. Deploy the application
+
+# Vercel Deployment Note
+
+Vercel deployment is possible but may require additional serverless routing configuration.
+
+Render is the recommended hosting platform for this project because it better supports Express.js server architecture.
+
+
+# Project Structure
+
+```text
 nutricheck-main/
 ├── public/
-│   ├── index.html          # Main UI
+│   ├── index.html
 │   ├── css/
-│   │   └── style.css       # All styling
+│   │   └── style.css
 │   └── js/
-│       ├── app.js          # Frontend logic (fetch, display, history)
-│       ├── d3-gauge.js     # Evidence strength gauge chart
-│       └── utils.js        # Shared utilities
+│       ├── app.js
+│       ├── d3-gauge.js
+│       └── utils.js
+│
 ├── api/
-│   ├── analyze.js          # Core logic: PubMed search + Groq LLM analysis
-│   └── search.js           # PubMed search endpoint
+│   ├── analyze.js
+│   └── search.js
+│
 ├── data/
-│   └── dataset.json        # Sample claims dataset
-├── server.js               # Express server (entry point for local run)
+│   └── dataset.json
+│
+├── server.js
 ├── package.json
-├── .env.example            # Template for environment variables
-└── vercel.json             # Config for optional Vercel deployment
+├── .env.example
+└── README.md
 ```
 
+# How the Analysis Pipeline Works
+
+## 1. Topic Detection
+
+The claim is analyzed using keyword matching to identify the nutrition topic.
+
+Examples include:
+
+* cholesterol
+* fiber
+* weight loss
+* supplements
+* heart health
+
+## 2. PubMed Retrieval
+
+The application performs multiple PubMed query strategies until relevant papers are found.
+
+Data is retrieved using:
+
+* NCBI Entrez Search API
+* NCBI Summary API
+* NCBI Abstract Fetch API
+
+## 3. Evidence Strength Scoring
+
+Studies are weighted based on evidence quality.
+
+| Study Type                        | Weight |
+| --------------------------------- | ------ |
+| Systematic Review / Meta-analysis | 10     |
+| Randomized Controlled Trial       | 8      |
+| Clinical Trial                    | 7      |
+| Review                            | 5      |
+| Observational Study               | 3      |
+
+
+## 4. LLM Evidence Analysis
+
+The Groq-hosted Llama 3 model:
+
+* evaluates scientific evidence
+* analyzes claim validity
+* generates structured JSON verdicts
+* assigns confidence levels
+
+## 5. Result Visualization
+
+The frontend displays:
+
+* verdict classification
+* confidence level
+* evidence gauge
+* retrieved scientific papers
+* PubMed links
+
+# Verdict Categories
+
+| Verdict    | Meaning                                                     |
+| ---------- | ----------------------------------------------------------- |
+| TRUE       | Strong scientific evidence supports the claim               |
+| MISLEADING | The claim contains partial truth or lacks important context |
+| FALSE      | Scientific evidence contradicts the claim                   |
+
+# Example Claims
+
+Try entering:
+
+* "Eating eggs every day raises cholesterol"
+* "Greek yogurt helps with weight loss"
+* "Lemon water boosts metabolism"
+* "Red meat causes heart disease"
+* "High-fiber diets reduce colon cancer risk"
+
 ---
 
-## How the Analysis Works
+# Troubleshooting
 
-1. **Topic detection** — the claim is matched against keywords to identify the nutritional topic (e.g. protein, heart health, weight loss)
-2. **PubMed search** — up to 5 query strategies are tried in sequence until papers are found; searches the NCBI database of 35+ million biomedical articles
-3. **Evidence scoring** — papers are weighted by study type:
-   - Systematic Review / Meta-analysis → highest weight (10)
-   - Randomised Controlled Trial (RCT) → weight 8
-   - Clinical Trial → weight 7
-   - Review → weight 5
-   - Observational Study → weight 3
-4. **LLM analysis** — Groq runs Llama 3 70B to evaluate the claim against the retrieved abstracts and returns a structured JSON verdict
-5. **Result display** — verdict, confidence, evidence gauge, and paper links are rendered in the UI
+## `Error: GROQ_API_KEY is not set`
 
----
+* Ensure the `.env` file exists in the project root
+* Verify the variable name is exactly:
 
-## Verdicts Explained
-
-| Verdict | Meaning |
-|---|---|
-| **TRUE** | The claim is factually accurate and well-supported by scientific evidence |
-| **MISLEADING** | The claim has partial truth but is oversimplified, exaggerated, or missing important context |
-| **FALSE** | The claim is directly contradicted by scientific evidence |
-
-Confidence levels: **HIGH**, **MEDIUM**, or **LOW** — based on the quantity and quality of papers found.
+  ```env
+  GROQ_API_KEY
+  ```
+* Restart the server after editing `.env`
 
 ---
 
-## Example Claims to Try
+## `Port 3000 already in use`
 
-- "Greek yogurt is better for weight loss than regular yogurt"
-- "Eating eggs every day raises your cholesterol"
-- "High-fiber diets reduce the risk of colon cancer"
-- "Drinking lemon water in the morning boosts your metabolism"
-- "Red meat causes heart disease"
+Change the port inside `.env`:
 
----
+```env
+PORT=3001
+```
 
-## Troubleshooting
-
-**`Error: GROQ_API_KEY is not set`**
-- Make sure your `.env` file exists in the `nutricheck-main` folder (not inside any subfolder)
-- Check that the key is pasted correctly with no spaces around the `=`
-
-**`npm install` fails**
-- Ensure Node.js v14+ is installed: run `node --version` to check
-- Try deleting the `node_modules` folder and running `npm install` again
-
-**Port 3000 already in use**
-- Change `PORT=3001` in your `.env` file and restart
-
-**Analysis always returns an error**
-- Check your terminal for the error message — it will show the exact Groq API error
-- Verify your API key is valid by logging in to console.groq.com
+Then restart the server.
 
 ---
 
-## Disclaimer
+## `Application exited early` on Render
 
-NutriCheck is an educational tool for informational purposes only. It does not replace professional medical or dietary advice. Always consult a registered dietitian or healthcare provider for personalised nutrition guidance.
+Ensure the Render Start Command is:
 
+```bash
+node server.js
+```
+
+Do NOT use:
+
+```bash
+node api/analyze.js
+```
+
+because `analyze.js` is only an API route handler and not a standalone server.
+
+---
+
+## Analysis Returns Errors
+
+* Verify your Groq API key is valid
+* Check Render logs or terminal logs
+* Ensure internet access is available for PubMed requests
+
+---
+
+# Security Considerations
+
+* API keys are stored securely using environment variables
+* The frontend never exposes secret credentials
+* PubMed data is retrieved directly from official NCBI APIs
+* The application does not store personal medical data
+* Users should avoid submitting personally identifiable health information
+
+---
+
+# Limitations
+
+* AI-generated analysis may occasionally oversimplify scientific nuance
+* PubMed search relevance depends on query quality
+* Evidence strength scoring is heuristic-based
+* The tool is educational and not a substitute for clinical advice
+
+# Disclaimer
+
+NutriCheck is intended for educational and informational purposes only.
+
+It does not replace professional medical advice, diagnosis, or treatment.
+
+Users should consult qualified healthcare professionals or registered dietitians before making significant dietary or medical decisions.
+
+```
+```
